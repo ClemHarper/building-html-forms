@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Survey</title>
+    </head>
+    <body>
+        <h1>Basic survey form for the students and faculty of a/A</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="student">Student</option>
+                        <option value="Instructor">Instructor</option>
+                        <option value="Guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language</p>
+                        <input type="radio" id="languageChoice1" name="language_choice1" value="HTML">
+                        <label for="languageChoice1">HTML</label>
+
+                        <input type="radio" id="languageChoice2" name="language_choice2" value="CSS">
+                        <label for="languageChoice2">CSS</label>
+
+                        <input type="radio" id="languageChoice3" name="language_choice3" value="JavaScript">
+                        <label for="langaugeChoice3">JavaScript</label>
+
+
+                        <!--<button type="radio">HTML</button>
+                        <button type="radio">CSS</button>
+                        <button type="radio">JavaScript</button> -->
+                </div>
+
+                <div>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div>
+                    <label for="currentDate">Current Date</label>
+                    <input type="date" id="currentDate" name="current_date">
+                </div>
+
+                <!--<div>
+                    <checkbox type="signUp">Sign up for newsletter</checkbox>
+                </div> -->
+
+                <div>
+                    <input type="checkbox" id="signUp" name="sign_up"
+                    value="newsletter">
+                    <label for="signUp">Sign up for newsletter</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="agreeToTerms" name="agree_to_terms"
+                    value="yes">
+                    <label for="agreeToTerms">Agree to terms and conditions</label>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
